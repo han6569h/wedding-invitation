@@ -1,7 +1,36 @@
-echo "# wedding-invitation" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/han6569h/wedding-invitation.git
-git push -u origin main
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 청첩장</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="invitation">
+        <div class="header">
+            <h1>우리의 결혼식에 초대합니다</h1>
+            <p>홍길동 & 홍길순</p>
+        </div>
+        <div class="details">
+            <p>날짜: 2024년 12월 25일</p>
+            <p>시간: 오후 2시</p>
+            <p>장소: 서울시 강남구 청첩장홀</p>
+        </div>
+        <div class="rsvp">
+            <h2>RSVP</h2>
+            <form id="rsvpForm">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="attending">참석 여부:</label>
+                <select id="attending" name="attending" required>
+                    <option value="yes">참석</option>
+                    <option value="no">불참</option>
+                </select>
+                <button type="submit">제출</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
